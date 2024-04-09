@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Button Creator utilizando Java Script e o recurso Local Storage">
+  <meta name="keywords" content="HTML, CSS, JavaScript, DOM, LocalStorage">
+  <meta name="author" content="Jairo Uchôa">
+  <title>Button Creator @jairouchoa</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <section class="button-creator">
+    <form id="controles">
+      <label for="text">Texto</label>
+      <input type="text" name="text" id="text">
+      <label for="color">Cor do texto</label>
+      <input type="color" name="color" id="color">
+      <label for="backgroundColor">Cor de fundo</label>
+      <input type="color" name="backgroundColor" id="backgroundColor">
+      <label for="height">Altura (px)</label>
+      <input type="range" name="height" id="height" min="0" max="200">
+      <label for="width">Largura (px)</label>
+      <input type="range" name="width" id="width" min="0" max="600">
+      <label for="border">Características da borda</label>
+      <input type="text" name="border" id="border">
+      <label for="borderRadius">Border Radius (px)</label>
+      <input type="range" name="borderRadius" id="borderRadius" min="0" max="20">
+      <label>Família da fonte</label>
+      <select name="fontFamily" id="fontFamily">
+        <option value="Verdana">Verdana</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="monospace">Monospace</option>
+      </select>
+      <label for="fontSize">Tamanho da fonte (px)</label>
+      <input type="number" name="fontSize" id="fontSize">
+    </form>
+    <section class="resultado">
+      <button class="btn">Clique</button>
+      <pre><code class="css"></code></pre>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
